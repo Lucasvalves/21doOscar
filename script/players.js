@@ -93,7 +93,7 @@ function buttonM2click(model) {
 var victory1 = false;
 buttonM1.onclick = () => {
    flipGameSoundM();
-   playerTurn()
+   playerturn()
    num = buttonM1.value;  
    if(buttonM1.value == num && num == 21){    
 
@@ -117,7 +117,7 @@ buttonM1.onclick = () => {
 //function de click do segundo botão do multiplayer
 buttonM2.onclick = () => {
    flipGameSoundM();
-   playerTurn()
+   playerturn()
    num = buttonM2.value;
    if(buttonM2.value == num && num == 21){   
     var vitory = document.getElementById('victory');
@@ -140,7 +140,7 @@ buttonM2.onclick = () => {
 //function de click do terceiro botão do multiplayer
 buttonM3.onclick = () => {
    flipGameSoundM();
-   playerTurn()
+   playerturn()
    num = buttonM3.value;    
    if(buttonM3.value == num && num == 21){
        var vitory = document.getElementById('victory');
@@ -173,7 +173,7 @@ function pontuacaoV(){
    }
    scoreVM.innerHTML = pontVM;  
 } 
-//function que leva o nome do jogador vencedor seja p computer ou player para o localStorage
+//function que leva o nome do jogador vencedor seja O computer ou player para o localStorage
 function nameM(){
    localStorage.setItem("mNome", inputM1.value);
    var nomeM = localStorage.getItem("mNome");         
@@ -186,7 +186,7 @@ function playerturn(){
    if(vezjogador == 0 ){  
       playerT1M.innerHTML = `Vez ${inputM1.value} !`;  
    }
-   if(vezjogador == 1 ){  
+   else{  
       playerT1M.innerHTML = `Vez ${input2M.value} !`;  
    }
 }
