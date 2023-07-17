@@ -1,151 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    <link href="pg.css/style.css" rel="stylesheet">
-    <link rel="icon" href="./image/Oscar.png" type="image/png">
-    <title>Oscar 21 Game</title>  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="pg.css/style.css" rel="stylesheet">
+  <link href="pg.css/global.css" rel="stylesheet">
+  <link rel="icon" href="/image/oscar.png" type="image/png">
+  <title>Oscar 21 Game</title>  
 </head>
 <body>
-    <section id="sec1">
-        <div id="scrStart">
-            <div>Oscar 21 Game</div>
-            <ul id="ulMenuStart" > 
-                <li>
-                    <button id="single" class="btn-opc-game" > Single player</button>
-                </li>
-                <li>
-                    <button id="multi" class="btn-opc-game" > Multi player</button>
-                </li>
-           </ul>
-        </div>
-        <!-- tags do modo muiltiplayer -->
-        <div id="scrloading">
-          <div id="container-load">
-              <div class="loading">Loading...</div>
-              <div class="container-barra">
-              <div class="barra"></div> 
-            </div> 
-          </div>
-        </div>
-        <!-- tags do modo muiltiplayer -->
-        <div id="loadM"> 
-            <div id="container-loadM">
-                <div class="loadingM">Loading...</div>
-                <div class="container-barraM">
-                <div class="barraM"></div> 
-              </div>
-            </div> 
-        </div>
-        <!-- tags do modo Single Player -->
-        <div id="persName">       
-            <div id="infor-name"> Enter your GitHub:</div>            
-                <input type="text" id="inserName1" placeholder="1 player" ></input>
-                <button class="btn-confir" id="nameTurn" > Submit</button>
-            </div>
-        </div>
-        <!-- tags do modo muiltiplayer -->
-        <div id="persNameM">       
-            <div id="infor-nameM"> Enter your GitHub:</div>            
-                <input type="text" id="inserName1M" placeholder="1 player" ></input>
-                <input type="text" id="inserName2M" placeholder="2 player"></input>
-                <button class="btn-confirM" id="nameTurnM" > Submit</button>
-            </div>
-        </div>
-        <!-- tags do modo Single Player -->
-        <div id="scrRegras"style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat" >  
-            <div class="classRegras">Rules of the game</div>  
-            <ol id="ol-Regras">
-                <li>Each player can only choose three numbers from the last one.</li>
-                <li>Select a number greater than 21 the player will lose the match.</li>
-                <li>To play just click on the chosen number.</li> 
-                <li>Whoever gets to 21 first wins the match.</li>            
-            </ol>
-            <div class="classRegras">
-                <button class="btn-close" id="game" > Close  </button>
-            </div>  
+  <section id="sec1">
+    <div id="scrStart">
+      <div>Oscar 21 Game</div>
+      <ul id="ulMenuStart" > 
+        <li>
+          <button id="single" class="btn-opc-game" > Single player</button>
+        </li>
+        <li>
+          <button id="multi" class="btn-opc-game" > Multi player</button>
+        </li>
+      </ul>
+    </div>
+    <!-- tags do modo multiplayer -->
+    <div id="scrloading">
+      <div id="container-load">
+        <div class="loading">Loading...</div>
+        <div class="container-barra">
+        <div class="barra"></div> 
         </div> 
-        <!-- tags do modo muiltiplayer Player -->
-        <div id="scrRegrasM"style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat" >  
-            <div class="classRegrasM">Rules of the game</div>  
-            <ol id="ol-RegrasM">
-                <li>Each player can only choose three numbers from the last one.</li>
-                <li>Select a number greater than 21 the player will lose the match.</li>
-                <li>To play just click on the chosen number.</li> 
-                <li>Whoever gets to 21 first wins the match.</li>            
-            </ol>
-            <div class="classRegrasM">
-                <button class="btn-closeM" id="gameM" > Close  </button>
-            </div>  
-        </div>  
-        <!-- tags do modo Single Player -->    
-        <div id="__container" class="container__" style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat">
-            <div id="info-pc">
-                <p>Computer chose</p>
-                <div id="numberPC"> </div>
-            </div>
-            <div class="descri">               
-                <div id="divline"> <p class="line typing-animation" id="playerTurn1">Your time</p></div>
-                <div class="letter"><input type="submit" id="buttonS1" value="1"/></div>
-                <div class="letter" id="letter-quite"><input type="submit" id="buttonS2" value="2"></div> 
-                <div class="letter" ><input type="submit" id="buttonS3" value="3"/></div>
-            </div>
+      </div>
+    </div>
+      <!-- tags do modo multiplayer -->
+    <div id="loadM"> 
+      <div id="container-loadM">
+        <div class="loading">Loading...</div>
+        <div class="container-barra">
+        <div class="barra"></div> 
         </div>
-        <!-- tags do modo muiltiplayer Player -->
-        <div id="__containerM" class="containerM__" style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat">
-            <div class="descriM">               
-                <div id="divlineM"> <p class="lineM typing-animationM" id="playerTurn1M">Your time</p></div>
-                <div class="letterM"><input type="submit" id="buttonM1" value="1"/></div>
-                <div class="letterM" id="letter-quiteM"><input type="submit" id="buttonM2" value="2"></div> 
-                <div class="letterM" ><input type="submit" id="buttonM3" value="3"/></div>
-            </div>
+      </div> 
+    </div>
+    <!-- tags do modo Single Player -->
+    <div id="persName">       
+      <div id="infor-name"> Enter your GitHub:</div>            
+        <input type="text" id="inserName1" placeholder="1 player" >
+        <button class="btn-confir" id="nameTurn" > Submit</button>
+      </div>
+    </div>
+    <!-- tags do modo muiltiplayer -->
+    <div id="persNameM">       
+      <div id="infor-nameM"> Enter your GitHub:</div>            
+        <input type="text" id="inserName1M" placeholder="1 player" >
+        <input type="text" id="inserName2M" placeholder="2 player">
+        <button class="btn-confir" id="nameTurnM" > Submit</button>
+      </div>
+    </div>
+    <!-- tags do modo Single Player -->
+    <div id="scrRegras"style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat" >  
+      <div class="classRegras">Rules of the game</div>  
+      <ol id="ol-Regras">
+        <li>Each player can only choose three numbers from the last one.</li>
+        <li>Select a number greater than 21 the player will lose the match.</li>
+        <li>To play just click on the chosen number.</li> 
+        <li>Whoever gets to 21 first wins the match.</li>            
+      </ol>
+      <div class="classRegras">
+        <button class="btn-close" id="game" > Close  </button>
+      </div>  
+    </div> 
+    <!-- tags do modo muiltiplayer Player -->
+    <div id="scrRegrasM"style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat" >  
+      <div class="classRegras">Rules of the game</div>  
+      <ol id="ol-RegrasM">
+        <li>Each player can only choose three numbers from the last one.</li>
+        <li>Select a number greater than 21 the player will lose the match.</li>
+        <li>To play just click on the chosen number.</li> 
+        <li>Whoever gets to 21 first wins the match.</li>            
+      </ol>
+      <div class="classRegras">
+        <button class="btn-close" id="gameM" > Close  </button>
+      </div>  
+    </div>  
+      <!-- tags do modo Single Player -->    
+      <div id="__container" class="container__" style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat">
+        <div id="info-pc">
+          <p>Computer chose</p>
+          <div id="numberPC"> </div>
         </div>
-       <!-- tags do modo Single Player -->
-        <div id="menuOpt" style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat"> 
-            <div id="menu">Menu</div>
-            <div class="descriMenu">Choose one of the options!</div>      
-            <ul id="ulMenu" >          
-                <li  class="li">
-                    <button class="btn-menu"id="newGameMenu"> New Game</button>
-                </li>
-                <li class="li">
-                    <button class="btn-menu" id="rulesMenu"> Rules </button>
-                </li>
-                <li class="li">
-                    <button class="btn-menuM" id="returStartS"> Menu Start</button>
-                </li>
-                <li class="li">
-                    <button class="btn-menu ranking" id="quitS" > Quit game </button>                  
-                </li>
-            </ul>
+        <div class="descri">               
+          <div id="divline"> <p class="line typing-animation" id="playerTurn1">Your time</p></div>
+          <div class="letter"><input type="submit" id="buttonS1" value="1"/></div>
+          <div class="letter" id="letter-quite"><input type="submit" id="buttonS2" value="2"></div> 
+          <div class="letter" ><input type="submit" id="buttonS3" value="3"/></div>
         </div>
-        <!-- tags do modo muiltiplayer Player -->
-        <div id="menuOptM" style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat"> 
-            <div id="menuM">Menu</div>
-            <div class="descriMenuM">Choose one of the options!</div>      
-            <ul id="ulMenuM" >          
-                <li  class="li">
-                    <button class="btn-menuM"id="newGameMenuM"> New Game</button>
-                </li>
-                <li class="li">
-                    <button class="btn-menuM" id="rulesMenuM"> Rules </button>
-                </li>
-                <li class="li">
-                    <button class="btn-menuM" id="returStartM"> Menu Start</button>
-                </li>
-                <li class="li">
-                    <button class="btn-menuM rankingM" id="quitM" > Quit game </button>                  
-                </li>
-            </ul>
+      </div>
+      <!-- tags do modo muiltiplayer Player -->
+      <div id="__containerM" class="container__" style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat">
+        <div class="descri">               
+          <div id="divlineM"> <p class="line typing-animationM" id="playerTurn1M">Your time</p></div>
+          <div class="letter"><input type="submit" id="buttonM1" value="1"/></div>
+          <div class="letter" id="letter-quiteM"><input type="submit" id="buttonM2" value="2"></div> 
+          <div class="letter" ><input type="submit" id="buttonM3" value="3"/></div>
         </div>
+      </div>
+      <!-- tags do modo Single Player -->
+      <div id="menuOpt" style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat"> 
+        <div id="menu">Menu</div>
+        <div class="descriMenu">Choose one of the options!</div>      
+        <ul id="ulMenu" >          
+          <li  class="li">
+              <button class="btn-menu"id="newGameMenu"> New Game</button>
+          </li>
+          <li class="li">
+              <button class="btn-menu" id="rulesMenu"> Rules </button>
+          </li>
+          <li class="li">
+              <button class="btn-menu" id="returStartS"> Menu Start</button>
+          </li>
+          <li class="li">
+              <button class="btn-menu ranking" id="quitS" > Quit game </button>                  
+          </li>
+        </ul>
+      </div>
+      <!-- tags do modo muiltiplayer Player -->
+      <div id="menuOptM" style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat"> 
+        <div id="menuM">Menu</div>
+        <div class="descriMenu">Choose one of the options!</div>      
+        <ul id="ulMenuM" >          
+          <li  class="li">
+            <button class="btn-menu"id="newGameMenuM"> New Game</button>
+          </li>
+          <li class="li">
+            <button class="btn-menu" id="rulesMenuM"> Rules </button>
+          </li>
+          <li class="li">
+            <button class="btn-menu" id="returStartM"> Menu Start</button>
+          </li>
+          <li class="li">
+            <button class="btn-menu rankingM" id="quitM" > Quit game </button>                  
+          </li>
+        </ul>
+      </div>
         <!-- tags do modo Single Player -->
-        <div id="quitGameS" style="display:block;"  ></div>
+      <div id="quitGameS" style="display:block;"  ></div>
         <!-- tags do modo muiltiplayer Player -->
-        <div id="quitGameM" style="display:block;"></div>
+      <div id="quitGameM" style="display:block;"></div>
         <div id="_scrRanking" class="screenRanking " style="background-image: url(image/Cartas.png); background-size:cover; background-repeat: no-repeat">
           <div>Ranking <img id="trophy" src="./image/trophy.png" alt="trofeu"></div>
           <div id="result">
@@ -155,55 +156,55 @@
                 <label for="" class="labelDV">Victorys</label>
             </div>
             <div id="divtable">
-                <table class="result">
-                    <tr>
-                        <td  id="pnome1"></td>
-                        <td id="scoreV" class="score">0</td>
-                        <td id="scoreD" class="score">0</td>
-                    </tr>
-                    <tr>
-                        <td id="pnome2" ></td>
-                        <td id="scoreVM">0</td>
-                        <td id="scoreDM">0</td>
-                    </tr>
-                </table>   
+              <table class="result">
+                <tr>
+                  <td  id="pnome1"></td>
+                  <td id="scoreV" class="score">0</td>
+                  <td id="scoreD" class="score">0</td>
+                </tr>
+                <tr>
+                  <td id="pnome2" ></td>
+                  <td id="scoreVM">0</td>
+                  <td id="scoreDM">0</td>
+                </tr>
+              </table>   
              </div>
            </div>         
         </div>
-    </div>         
+      </div>         
     <div id="victory"style="background-image: url(image/fundodovictory.png)">Congratulations you won!
-        <img id="trophy" src="./image/trophyrank.png" alt="">  
+      <img id="trophy" src="./image/trophyrank.png" alt="">  
     </div> 
     <!-- tags do modo Single Player -->
     <div id="defeats"> you lost, try again.
-        <button id="openMenu" class="btn-menu" > Menu</button>
+      <button id="openMenu" class="btn-menu" > Menu</button>
     </div> 
     <!-- tags do modo muiltiplayer Player -->
     <div id="defeatM"> you lost, try again.
-        <button id="openMenuM" class="btn-menuM" > Menu</button>
+      <button id="openMenuM" class="btn-menuM" > Menu</button>
     </div>       
-    </section>
-    <section id="sec2">
+  </section>
+  <section id="sec2">
     <!-- tags do modo Single Player -->    
-        <div id="menuAtalho">
-            <img src="./image/icons8-menu-25.png" alt="trophy">          
-            <p>menu</p>
-       </div>
+    <div id="menuAtalho">
+      <img src="./image/icons8-menu-25.png" alt="trophy">          
+      <p>menu</p>
+    </div>
        <!-- tags do modo muiltiplayer Player -->
-       <div id="menuAtalhoM">
-        <img src="./image/icons8-menu-25.png" alt="trophy">          
-        <p>menu</p>
+    <div id="menuAtalhoM">
+      <img src="./image/icons8-menu-25.png" alt="trophy">          
+      <p>menu</p>
    </div>
-    </section>
-    <audio id="flipSound">
-        <source src="./assets/mixkit-hard-typewriter-click-1119.wav">
-    </audio> 
-    <audio id="flipSoundM">
-        <source src="./assets/mixkit-hard-typewriter-click-1119.wav">
-    </audio> 
+  </section>
+  <audio id="flipSound">
+      <source src="./assets/mixkit-hard-typewriter-click-1119.wav">
+  </audio> 
+  <audio id="flipSoundM">
+      <source src="./assets/mixkit-hard-typewriter-click-1119.wav">
+  </audio> 
 </body>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- Tags com os arquivos js do modo Single Player e Multi Player -->
-    <script src="./script/computer.js" ></script> 
-    <script src="./script/players.js" ></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- Tags com os arquivos js do modo Single Player e Multi Player -->
+  <script src="./script/computer.js" ></script> 
+  <script src="./script/players.js" ></script>
 </html>
